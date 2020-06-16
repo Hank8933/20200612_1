@@ -45,7 +45,7 @@ int main()
     char c;
     stack *first = 0;
 
-    while (!('\n' == (c = getchar()))) {
+    while ('\n' != (c = getchar())) {
         char s[2] = {0};
         *s = c;
         stack *n = malloc(sizeof(stack));
